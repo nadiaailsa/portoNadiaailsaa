@@ -175,6 +175,10 @@
         .logo-initial .char-n{color:var(--purple-dark);}
         .logo-initial .char-a{color:var(--accent-dark);}
         .logo-initial .char-dot{color:var(--mint-dark);}
+
+        /* ===== New: Project Tech Stack Chips (Skripsi Card) ===== */
+        .project-tech-stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+        .project-tech-stack span{font-size:0.65rem;font-weight:600;padding:4px 10px;border-radius:6px;background:rgba(107,203,158,.1);color:var(--mint-dark);border:1px solid rgba(107,203,158,.15);}
     </style>
 </head>
 <body>
@@ -217,7 +221,7 @@
                 <p class="text-sm tracking-widest uppercase mb-4 reveal-up font-heading font-semibold" style="color:var(--purple);letter-spacing:.2em;transition-delay:.1s;">Welcome to my portfolio</p>
                 <h1 class="font-heading text-4xl md:text-6xl font-bold leading-tight mb-4 reveal-up" style="color:var(--text-dark);transition-delay:.2s;">Hi, I'm <span class="name-highlight">Nadia Ailsa</span><span class="typing-cursor"></span></h1>
                 <div class="deco-line-hover mb-6 mx-auto md:mx-0 reveal-up" style="width:120px;transition-delay:.3s;"></div>
-                <p class="text-base md:text-lg leading-relaxed mb-8 reveal-up" style="color:var(--text-medium);transition-delay:.4s;max-width:500px;">Final-year Informatics student with a passion for database systems, software development, and technology. I enjoy creating efficient digital solutions, learning new technologies, and turning ideas into meaningful applications.</p>
+                <p class="text-base md:text-lg leading-relaxed mb-8 reveal-up" style="color:var(--text-medium);transition-delay:.4s;max-width:500px;">Fresh graduate in Informatics with a strong interest in database systems, software development, and web development. Skilled in developing efficient and user-oriented digital solutions, with experience in both front-end and back-end development. Eager to continuously learn new technologies, enhance technical skills, and contribute to innovative and impactful projects.</p>
                 <div class="flex flex-wrap gap-4 justify-center md:justify-start reveal-up" style="transition-delay:.5s;">
                     <a href="#journey" class="btn-primary">My Journey</a>
                     <a href="#contact" class="btn-outline"><iconify-icon icon="solar:letter-linear" width="18"></iconify-icon> Contact Me</a>
@@ -540,7 +544,33 @@
             <div class="section-line reveal-up" style="transition-delay:.2s;"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
+
+            <!-- Project 0: Skripsi — Kebun Pisang (CNN EfficientNetB0) -->
+            <div class="project-card reveal-up" style="transition-delay:.05s;">
+                <div class="project-img-wrapper">
+                    <img src="https://i.ibb.co/Q7XcRMdc/Screenshot-2026-09-09-at-13-44-52.png" alt="Screenshot 2026 09 09 at 13 44 52" border="0">
+                    <div class="project-overlay">
+                        <a href="https://pisang-shelf-life.up.railway.app" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm" style="padding:10px 24px;">
+                            <iconify-icon icon="solar:link-round-bold" width="16"></iconify-icon> Visit Website
+                        </a>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold font-heading" style="background:var(--peach-lighter);color:var(--peach-dark);">Skripsi</span>
+                        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold font-heading" style="background:rgba(167,139,250,.1);color:var(--purple-dark);">Machine Learning</span>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2" style="color:var(--text-dark);" title="Analisis CNN Berbasis EfficientNetB0 untuk Klasifikasi Varietas dan Estimasi Umur Simpan Pisang Ambon dan Pisang Raja Berdasarkan Citra Buah">Banana Variety Classification & Shelf-Life Estimation (Banana Plantation)</h3>
+                    <p class="text-sm leading-relaxed" style="color:var(--text-medium);">Developed a CNN-based image analysis system using EfficientNetB0 to classify Ambon and Raja banana varieties and estimate their shelf life based on digital image data. The project was integrated with a web-based interface that enables users to upload images and receive real-time classification and analysis results.</p>
+                    <div class="project-tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>EfficientNetB0</span>
+                        <span>Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+
             <!-- Project 1: E-Commerce (furniture.go) -->
             <div class="project-card reveal-up" style="transition-delay:.1s;">
                 <div class="project-img-wrapper">
